@@ -1,0 +1,39 @@
+.header {
+  height: 70px;
+  background-color: #26ae60;
+  display: grid;
+  place-items: center;
+  .header-content {
+    width: 90%;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    color: white;
+    .header-left {
+      flex: 1;
+      h1 {
+        font-size: 2rem;
+      }
+    }
+    .header-right {
+      .navbar {
+        display: flex;
+        align-items: center;
+        .nav-list {
+          list-style: none;
+          font-size: 1.2rem;
+          cursor: pointer;
+          font-weight: bold;
+          letter-spacing: 1px;
+          margin-left: 10px;
+          padding-bottom: 5px;
+          border-bottom: 2px solid transparent;
+          transition: 0.2s;
+          &:hover {
+            border-bottom: 2px solid #fbd28b;
+          }
+        }
+      }
+    }
+  }
+}
